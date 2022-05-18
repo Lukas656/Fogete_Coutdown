@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown - Foguete</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="module" src="js/script.js" defer></script>
+  </head>
+  <body>
+    <img src="images/top-image.svg" />
+    <h1>Countdown - Foguete</h1>
+    <div class="conteiner">
+      <div class="card">
+        <p id="days">0</p>
+        <h6>Dia(s)</h6>
+      </div>
+      <div class="card">
+        <p id="hours">0</p>
+        <h6>Hora(s)</h6>
+      </div>
+      <div class="card">
+        <p id="mins">0</p>
+        <h6>Min</h6>
+      </div>
+      <div class="card">
+        <p id="secunds">0</p>
+        <h6>Seg</h6>
+      </div>
+      <br />
+      <img src="images/rocket.svg" width="490px" />
+    </div>
+    <button class="modal-btn">Modal</button>
+    <img src="images/bottom-image.svg" />
+
+    <div id="modal-promocao" class="modal-bg">
+      <div class="modal">
+        <button class="closed">X</button>
+        <h2><strong>Fomulário</strong></h2>
+        <form>
+          <label for="input">Nome:</label><br><br>
+          <input type="text" class="input"placeholder="Digite Seu Nome" autofocus/><br><br>
+          <label for="email">Email:</label><br><br>
+          <input type="email" class="input" placeholder="Digite seu Email" required/><br><br>
+          <label for="email">Cod Lançamento:</label><br><br>
+          <input type="password" class="input" placeholder="Cod de Lançamento" required/>
+          <input type="submit" class="modalbtn" value="Enviar"/>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

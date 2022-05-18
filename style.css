@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2? family= Playfair+Display:wght@600 & family= Roboto:wght@300 & display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(18, 30, 88);
+}
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1{
+    font-size: 50px;
+    font-family:sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(39, 2, 38, 0.5);
+    width: 90vh;
+    border-bottom: 2px solid;
+    padding-top: 5px;
+    margin-left: 155px;
+    margin-bottom: 0px;
+}
+h6{
+    font-size: 40px;
+    padding-top: 5px;
+}
+h2{
+    color: rgb(2, 2, 60);
+    padding-bottom: 15px;
+    margin-left: 25%;
+}
+.card{
+    color: rgb(255, 255, 255);
+    background-color: rgba(4, 85, 151, 0.1);
+    border-bottom: 2px solid ;
+    text-align: center;
+    height: 110px;
+    font-size: 90px;
+    font-family:sans-serif;
+    margin:10px;
+    margin-top:92px;
+    
+}
+.modal-btn{
+    font-size: 30px;
+    font-family:sans-serif;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(39, 2, 38, 0.5);
+    border-radius: 3px;
+    margin-left: 30%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.modalbtn{
+    padding: 10px 30px;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 50%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.modal-bg{
+    font-family:sans-serif;
+    width: 230vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-bg.mostrar{
+    display: flex;
+    
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0 , -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0 , 0, 0);
+    }
+}
+.mostrar .modal{
+    animation: modal .3s;
+}
+.modal{
+    background-color: white;
+    width: 4%;
+    min-width: 300px;
+    padding: 40px;
+    border: 20px solid rgb(1, 38, 172);
+    box-shadow: 0 0 0 5px wheat;
+    position: relative;
+}
+
+.closed{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: rgb(154, 1, 1);
+    color: black;
+}
+.closed:hover{
+    background-color: red;
+}
+form{
+    font-family:sans-serif;
+    text-align: center;
+}
+input{
+    margin-left: 5px;
+    border: 3px solid;
+    border-color: blue;
+}
