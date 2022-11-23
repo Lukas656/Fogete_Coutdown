@@ -4,7 +4,7 @@ const hoursEl = document.getElementById("hours")
 const minsEl = document.getElementById("mins")
 const secundsEl = document.getElementById("secunds")
 
-const newYears =  "09 july 2022"
+const newYears =  "9 jun 2023"
 
 function coutdown(){
     
